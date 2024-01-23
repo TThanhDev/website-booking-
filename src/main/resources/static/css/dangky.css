@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+p{
+    margin: 0!important;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Inter !important;
+    font-weight: 300;
+}
+/* @media (min-width: 1500px) {
+    .image-container{
+        max-width: 1500px;
+    }
+} */
+.containerx {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+}
+.image-container {
+    background-image: url('../img/beach.jpg');
+    
+    background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh; /* Kích thước chiều cao là 100% của viewport */
+            position: fixed; /* Để giữ vị trí cố định */
+            top: 0;
+            left: 0;
+            width: 60%; /* Đặt kích thước của hình ảnh bên trái */
+   
+
+}
+
+.login-container {
+    background-color: #ffffff;
+    flex: 0.4;
+    padding: 20px;
+    width: 40%;
+    height: 100vh;
+    position:absolute;
+    right: 0%;
+    font-family: Inter !important;
+    font-weight: 300;
+}
+
+.login-container h3 {
+   
+    text-align: center;
+    margin-bottom: 80;
+    font-style: normal;
+    font-weight: 900;
+    
+}
+.login-container h2{
+    text-align: center;
+    margin-bottom: 120;
+    /* font-family: SVN-Gilroy; */
+    font-weight: 710;
+    font-size: 40px;
+
+}
+
+.form-group{
+    margin-bottom: 20px;
+    border-radius: 7%;
+    width: 300px;
+    position: relative;
+    font-family: Inter !important;
+    font-weight: 300;
+    /* display: grid; */
+    
+}
+.form-group #toggle{
+    position: absolute;
+    top: 14px;
+    left: 350px;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    font-size: 1.1em;
+    cursor: pointer;
+    color: rgb(186, 186, 186);
+    user-select: none;
+    font-family: fontAwesome;
+}
+.form-group #toggle::before{
+    content: '\f070';
+    
+}
+.form-group #toggle.hide::before{
+    content: '\f06e';
+    
+}
+.form-group Button{
+    margin-top:50px;
+}

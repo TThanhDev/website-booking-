@@ -1,0 +1,508 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0!important;
+}
+
+
+/* link font */
+
+
+body {
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.containerx {
+    width: 1440px;
+}
+
+.section1 {
+    background-color: #EEEEEE;
+    width: 346px;
+    height: 1413px;
+    padding-top: 30px;
+    border-radius: 10px;
+    float: left;
+}
+
+.first-row {
+    margin: 20px 0px 20px 0;
+    background-color: #3B0EEE;
+    color: #fff;
+    width: 346px;
+    height: 53px;
+    padding: 15px 0px 15px 25px;
+    align-items: center;
+}
+
+.row-filter {
+    width: 294px;
+    height: 83px;
+    margin-bottom: 20px;
+}
+
+.row-filter label {
+    margin-bottom: 5px;
+}
+
+.custom-select {
+    -webkit-appearance: none;
+    /* Safari và Chrome */
+    -moz-appearance: none;
+    /* Firefox */
+    appearance: none;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 294px;
+    height: 53px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.row-filter-2 {
+    margin-bottom: 20px;
+    width: 294px;
+}
+
+.row-filter-2 .col {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 3px;
+    height: 40px;
+    text-align: center;
+    padding-top: 6px;
+    font-weight: bold;
+    width: 143px;
+}
+
+.row-filter-2 .col:hover {
+    background-color: #3B0EEE;
+    color: #fff;
+}
+
+.date-box {
+    width: 294px;
+    height: 53px;
+    background-color: #fff;
+    text-align: right;
+    border-radius: 10px;
+    padding-right: 30px;
+}
+
+.date-box input {
+    width: 90%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.date-box input:focus {
+    border: none;
+    outline: none;
+}
+
+label {
+    font-weight: bold;
+}
+
+.slider-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    /* Adjust as needed */
+    height: 20px;
+    /* Adjust as needed */
+    margin-right: 10px;
+}
+
+
+/* Hide the default checkbox */
+
+.slider-checkbox input {
+    display: none;
+}
+
+
+/* Styles for the round slider */
+
+.slider {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 40px;
+    /* Adjust as needed */
+    height: 16px;
+    /* Make it round */
+    background-color: #cccccccb;
+    /* Background color of the slider */
+    border-radius: 8px;
+    /* Make it round */
+    transition: 0.4s;
+    /* Transition for smooth sliding effect */
+}
+
+
+/* Change slider color when checked */
+
+.slider-checkbox input:checked+.slider {
+    background-color: #2196F3;
+    /* Adjust the color as needed */
+}
+
+
+/* Move the slider to the right when checked */
+
+.slider-checkbox input:checked+.slider:before {
+    transform: translateX(20px);
+    /* Adjust as needed */
+}
+
+
+/* Styles for the slider thumb (the circular handle) */
+
+.slider:before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    /* Adjust as needed */
+    height: 16px;
+    /* Adjust as needed */
+    background-color: white;
+    /* Color of the slider thumb */
+    border-radius: 50%;
+    /* Make it round */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Add shadow for depth */
+    transition: 0.4s;
+    /* Transition for smooth sliding effect */
+}
+
+.wrapper {
+    list-style-type: none;
+    margin: 0;
+    height: 45px;
+    -webkit-box-align: center;
+    -ms-flex-align: center!;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.wrapper a {
+    color: #333;
+    text-decoration: none;
+}
+
+.section2 {
+    float: right;
+    width: 70%;
+}
+
+.item-card {
+    height: 450px;
+    padding: 5px;
+}
+
+.card {
+    width: 290px;
+    height: 440px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.card-img {
+    width: 270px;
+    height: 160px;
+    display: flex;
+}
+
+.card-avt {
+    width: 270px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card-icon {
+    position: relative;
+    left: -270px;
+}
+
+.card-content {
+    width: 270px;
+    height: 190px;
+    margin: 5px 0px 10px 0px;
+}
+
+.card-inf1 {
+    width: 30%;
+    background-color: #ccccff;
+    float: left;
+    text-align: center;
+    border-radius: 5px;
+    color: #3B0EEE;
+    font-weight: bold;
+}
+
+.card-inf2 {
+    /* width: 50%; */
+    padding: 0px 10px 0px 10px;
+    border: 2px solid #ccccff;
+    float: right;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.card-title {
+    height: 80px;
+}
+
+.card-title a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.card-title a:hover {
+    color: #2196F3;
+}
+
+.section2 .item-card .card .card-btn {
+    width: 280px;
+    height: 45px;
+}
+
+.section2 .item-card .card .card-btn a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.a-btn {
+    border-radius: 5px;
+    border: 1px solid #ccccff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    font-size: large;
+}
+
+.a-btn img {
+    width: 20px;
+    position: relative;
+    top: -2px;
+}
+
+.pag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.pag a {
+    color: #333;
+}
+
+.section3 {
+    clear: both;
+    margin-bottom: 30px;
+}
+
+.custom-number {
+    display: flex;
+    background-color: #fff;
+    width: 294px;
+    height: 53px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.custom-lable {
+    width: 204px;
+}
+
+.custom-lable p {
+    font-size: small;
+    opacity: 70%;
+}
+
+
+/* Style the custom number input container */
+
+.custom-number-input {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    float: right;
+}
+
+
+/* Style the number input */
+
+input[type="number"] {
+    border: none;
+    width: 40px;
+    text-align: center;
+    background-color: transparent;
+    color: #3B0EEE;
+    font-weight: bold;
+}
+
+
+/* Style the custom number buttons */
+
+.custom-number-button {
+    border-radius: 50%;
+    border: 1px solid #333;
+    color: #333;
+    padding: 0px 4px 0px 4px;
+    line-height: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+.col-checkbox {
+    margin-bottom: 20px;
+    display: flex;
+    height: 25px;
+}
+
+.col-checkbox label {
+    font-weight: normal;
+    padding-left: 5px;
+}
+
+.card-combo {
+    width: 96%;
+    height: 270px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #ccccff;
+    margin-bottom: 20px;
+}
+
+.card-img-combo {
+    width: 35%;
+    height: 100%;
+    background-color: aqua;
+    border-radius: 20px;
+    float: left;
+}
+
+.card-img-combo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.card-content-combo {
+    width: 63%;
+    height: 100%;
+    float: right;
+}
+
+.inf-combo {
+    float: left;
+    width: 35%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #3B0EEE;
+    padding: 5px;
+    background-color: #ccccffda;
+}
+
+.vote {
+    float: right;
+    background-color: aliceblue;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(255, 247, 195);
+    margin-bottom: 10px;
+}
+
+.rating {
+    display: inline-block;
+    direction: rtl;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.rating label::before {
+    content: "\2606";
+    /* Unicode star character */
+}
+
+.rating input:checked~label::before {
+    color: gold;
+    /* Change the color to gold for selected stars */
+}
+
+.price-combo span {
+    color: red;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.card-footer-combo {
+    display: flex;
+}
+
+.btn-addcart {
+    width: 35%;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+.btn-addcart button {
+    border: none;
+    padding: 5px;
+    width: 100%;
+    background-color: #3B0EEE;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.btnSearch {
+	background-color: #3B0EEE;
+	width: 100px;
+	height:45px;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+}
